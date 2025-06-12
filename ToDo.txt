@@ -1,0 +1,43 @@
+
+def cfgConn(api_base_url: str, api_key: str, config: Dict[str, Any]) -> None: 
+api_key tá sendo passada dentro do config
+melhor deixar explicito nos argumentos timeout e retry
+
+==
+
+Se não achou nenhum dado, sair antes de exportar para excel
+
+==
+
+Mover as constantes para um único lugar
+
+==
+
+Em gsy_map.py parece que Optional não está sendo usado.
+Em gsy_data.py parece que List não está sendo usado.
+
+==
+
+Há funções interessantes que não estão sendo usadas.
+Exemplo: validadeMapping
+
+==
+
+Validar Qtd prevista <> Qtd atual e status igual a submitted
+Se template não termina em xlsm então erro fatal
+
+==
+Funções Definidas mas Não Utilizadas
+No arquivo gsy_debug.py:
+
+dbgWriteJSON() - Função definida na linha 96, mas não é chamada em nenhum dos arquivos fornecidos
+dbgClearDirectory() - Função definida na linha 121, mas não é utilizada em nenhum lugar
+
+No arquivo gsy_map.py:
+
+saveMap() - Função definida na linha 230, mas não é chamada em nenhum dos arquivos
+validateMapping() - Função definida na linha 251, mas não é utilizada
+
+No arquivo gsy_network.py:
+
+testConnectivity() - Função definida na linha 217, mas não é chamada em nenhum lugar

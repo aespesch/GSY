@@ -1,0 +1,28 @@
+# GSY Data Extraction System Requirements
+# Python 3.12.7 compatible versions
+# Install with:
+# pip install -r requirements.txt
+
+# Data manipulation and analysis
+pandas>=2.1.0
+
+# HTTP requests with retry logic
+requests>=2.31.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Excel file manipulation with macro support
+openpyxl>=3.1.2
+
+# Date utilities for relative date calculations
+python-dateutil>=2.8.2
+
+# Optional: For better logging output (not strictly required but recommended)
+colorlog>=6.7.0
+
+# Optional: For SSL certificate verification
+certifi>=2023.7.22
+
+# Optional: Character encoding detection
+chardet>=5.2.0
